@@ -1,0 +1,20 @@
+.staff {
+    padding: 50px 20px;
+  }
+  
+  .staff-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .staff-card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .staff-card img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  

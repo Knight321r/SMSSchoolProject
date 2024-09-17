@@ -1,0 +1,29 @@
+.highlights {
+    padding: 50px 20px;
+  }
+  
+  .highlights h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .highlight-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  

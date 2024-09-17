@@ -1,0 +1,21 @@
+.activities {
+    padding: 50px 20px;
+    background-color: #fafafa;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
