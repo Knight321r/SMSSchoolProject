@@ -1,9 +1,10 @@
 import React, { useState } from 'react'   
 import './Login.css';
 import smslogo from '../images/smslogo.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
-
+    const navigate = useNavigate()
     const [username, setusername] = useState("")
     const [password, setpassword] = useState("")
 
@@ -12,10 +13,14 @@ function Login() {
     }
 
     const handlepassword = (e) => {
-        setusername(e.target.value)
+        setpassword(e.target.value)
     }
 
     const role = "admin";
+
+    const handlereg = () => {
+        navigate('/Register')
+    }
 
   return (
     <div className='login'>
@@ -29,7 +34,7 @@ function Login() {
           <label for = "password">Password</label>
           <input id = "password" type = "password" onChange={(e) => handlepassword(e)} ></input>
           <button>Log In</button>
-          {role === "admin" ? <button>Create account ?</button> : null}
+          {role === "admin" ? <button onClick={handlereg}>Create account ?</button> : null}
         </div>
     </div>
   )

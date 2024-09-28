@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import './App.css';
 import Login from './components/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Register from './components/Register';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           </div>
       }/>
       <Route path='/login' element={<Login />}/>
+      <Route path='/register' element={<Register />}/>
     </Routes>
     </main>
   </Router>

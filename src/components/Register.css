@@ -1,4 +1,4 @@
-.login {
+.register {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,17 +6,17 @@
     box-sizing: border-box;
 }
 
-.login .start {
+.register .start {
     margin: auto;
     margin-top: 20px;
 }
 
-.login .start img {
+.register .start img {
     width: 100px;
     height: 100px;
 }
 
-.login .end {
+.register .end {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -28,17 +28,17 @@
     box-sizing: border-box;
 }
 
-.login h2 {
+.register h2 {
     font-family: sohne-var, sohne-woff, Helvetica Neue, Arial, sans-serif;
 }
 
-.login label {
+.register label {
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu";
     margin-bottom: 3px;
 }
 
-.login input {
+.register input {
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -50,11 +50,11 @@
     /* Make input take full width */
 }
 
-.login input:focus {
+.register input:focus {
     box-shadow: 0px 0px 1px 2px rgb(108,142,239);
 }
 
-.login button {
+.register button {
     padding: 8px;
     margin-top: 18px;
     font-family: "Amazon Ember", Arial, sans-serif;
@@ -63,5 +63,5 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 100%; /* Make button take full width */
 }
