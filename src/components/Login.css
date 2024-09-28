@@ -1,0 +1,61 @@
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.start{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.start img{
+    width: 100px;
+    height: 100px;
+}
+
+.end{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    /* text-align: center; */
+    box-shadow: 0px 0px 16px -5px grey;
+    width: 33%;
+    margin: auto;
+    padding: 30px 70px;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: sohne-var, sohne-woff, Helvetica Neue, Arial, sans-serif;
+}
+
+label{
+    cursor: pointer;
+    font-family : -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu";
+    margin-bottom: 3px;
+}
+
+input{
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0px 0px 1px 2px rgb(108,142,239);
+}
+
+button{
+    padding: 8px;
+    margin-top: 18px;
+    font-family: "Amazon Ember", Arial, sans-serif;
+    margin-bottom: 20px;
+    background-color: rgb(108,142,239);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,5 +1,5 @@
 .hero {
-    background: url('https://picsum.photos/id/237/200/300') no-repeat center center/cover;
+    background: url('https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
   
   .hero button {
     background-color: #ff7f50;
-    color: white;
+    color: white; 
     padding: 10px 20px;
     border: none;
     cursor: pointer;

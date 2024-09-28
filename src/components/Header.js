@@ -1,10 +1,18 @@
 import React from 'react';
 import './Header.css';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
   };
+
+  const handlelogin = () => {
+    navigate('/login')
+  }
 
   return (
     <header className="header">
@@ -20,7 +28,7 @@ const Header = () => {
           <li onClick={() => scrollToSection('testimonials')}>Testimonials</li>
         </ul>
       </nav>
-      <button className="login-btn">Login</button>
+      <button className="login-btn" onClick={handlelogin}>Login</button>
     </header>
   );
 };

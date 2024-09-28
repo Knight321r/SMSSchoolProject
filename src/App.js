@@ -8,18 +8,31 @@ import Staff from './components/Staff';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import './App.css';
+import Login from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Highlights />
-      <Activities />
-      <Staff />
-      <Testimonials />
-      <Footer />
+    <Router>
+    <main className="content">
+    <Routes>
+      <Route path='/' element={
+          <div>
+            <Header />
+            <Hero />
+            <About />
+            <Highlights />
+            <Activities />
+            <Staff />
+            <Testimonials />
+            <Footer />
+          </div>
+      }/>
+      <Route path='/login' element={<Login />}/>
+    </Routes>
+    </main>
+  </Router>
     </div>
   );
 }
