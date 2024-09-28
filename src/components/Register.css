@@ -35,10 +35,10 @@
 .register label {
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu";
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
-.register input {
+.register input, select{
     padding: 8px 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -50,7 +50,7 @@
     /* Make input take full width */
 }
 
-.register input:focus {
+.register input:focus, select:focus{
     box-shadow: 0px 0px 1px 2px rgb(108,142,239);
 }
 
